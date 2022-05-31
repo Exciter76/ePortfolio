@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html> 			
+
+<head>
+    <!-- Index Page -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
+    <title>Index</title>
+</head>
+<body onload="geoLocation()">
+
+    <!-- navigation bar -->
+    <div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="Coffee.html">Shop</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Body Area -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <p><h4 class="comment">Customer comments</h4></p>
+                    <p>Aroma coffee is simply the best. <span class="comment">Joe Bloggs Galway.</span></p>
+                    <p> Great coffee & yummy deserts. <span class="comment">Jane Bloggs, Galway.</span></p>
+                    <p> You have to have a cup of coffee at Aroma coffee 
+                        shop. I can't recommend them enought. <span class="comment">Kate Rash, Dublin.</span></p>
+                        <p>I didn't know what coffee was until I had
+                            a cup of coffee at Aroma Coffee. Cheers. <span class="comment">Snoop Dogg, Los Angeles.</span></p>
+                    </p>
+                    <div id="geoLocation"></div>
+                    <div>
+                        <p><strong>Get in touch</strong></p>
+                        <form action="admin@aroma-coffee.com" method="post">
+                            <!-- Email Address -->
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email address">
+                                <button id="btnHomeSend" onclick="Send()" class="btn btn-primary" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <canvas id="MainPageCanvas" class="canvas">
+                            
+                        </canvas>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p><center><h4>Aroma Coffee</h4></center></p>
+                    <p><p>Welcome to the coffee shop, a sort of café and shop in one.
+                        Here you can enjoy a coffee in the ambient atmosphere here in the
+                        shop or buy one of the brand of beans we have in stock that you
+                        can take home to enjoy.</p><p> If you come to our café though, why not have a coffee here and
+                            take a seat in one of the large armchairs we have and enjoy.
+                            We have everything here to help you to unwind with coffee,
+                            the loveliest deserts to induldge with board games to play 
+                            if you come with company. If you’re by yourself, help yourself
+                            to reading a daily newspaper or read one of the books by
+                            our smug library. It's all up to you.</p><p> We are sure you will enjoy the coffee here at Aroma Coffee.</p>
+                    </p></p>
+                    <p><h5>Motto:</h5>
+                        <li>We won't be beaten on price or compromise on quality.</li>
+                        <li>We have the most accommodating opening times available.</li>
+                        <li>We are conveniently located to surrounding amenities.</li>
+                    </p>
+                    <p><h5>As our customer, we pledge:</h5>
+                        <ol>
+                            <li>A warm welcome on making your order.</li>
+                            <li>clean, warm shop to help you enjoy your stay.</li>
+                            <li>A quality cup of coffee - if it's not to your satisfaction we
+                                promise to give you your money back!</li>
+                        </ol>
+                    </p>
+                </div>
+                <div class="col-3">
+                    <div class="imgTop"></div>
+                    
+                    <!-- central image -->
+                    <div>
+                        <img class="imgContainer" src="image/cup_of_coffee.jpg" alt="city landscape" />
+                    </div>
+
+                    <!-- video -->
+                    <div>
+                        <iframe class="imgContainer" src="https://www.youtube.com/embed/Z3dIahmR284" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" >
+                        </iframe>
+                    </div>
+                    
+                    <!-- Carousel -->
+                    <div>
+                        <iframe src="sideshow.html" class="imgContainer" style="border: 0;" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <center>
+            <div>
+                <p class="footerFont">Aroma Coffee, Narrow Lane, London England. Po. Box 15822.   
+                <a href="contact.html">Contact us</a></p>
+            </div>
+        </center>
+    </footer>
+    <script lang="JavaScript" src="js/app.js"></script>
+    <script>drawCompanyIcon();</script>
+    <script lang="JavaScript">
+       $(document).ready(function(){
+
+            //let the examiner know what is included on this page
+            alert("This page demonstrates the following HTML, CSS, and JavaScript features:\n" +
+                " HTML5: \n" + " CSS3: \n" + " JavaScript: \n" + " JQuery:\n" + "HTML5 Validation:\n" +
+                "div Styling:\n" + "Incorporate Media:\n" + "Geo Location:\n" + "Interactive Graphics:\n" +
+                "Canvas graphics via JavaScript (logo Aroma Coffee):\n" + "HTML5 Forms:\n");
+
+
+        })
+        
+    </script>
+</body>
+
+</html>

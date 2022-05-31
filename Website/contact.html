@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html> 			
+
+<head>
+	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    
+    <!-- navigation bar -->
+    <div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="Coffee.html">Shop</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contact Details -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="Col-3">
+                    <span class="moveLeft"></span>
+                </div>
+                <div class="Col-6">
+                    <div class="container border formWidth">
+                    <p><h5>Please enter your contact details for further information</h5></p>
+                    <!-- action="mailto:admin@aroma-coffee.com" method="post"-->
+                    <form action="mailto:admin@aroma-coffee.com" method="post">
+
+                        <!-- first name -->
+                        <div class="form-group">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        </div>
+
+                        <!-- Surname -->
+                        <div class="form-group">
+                            <label for="surName">Sur name</label>
+                            <input type="text" class="form-control" id="surName" placeholder="Enter your sur name">
+                        </div>
+
+                        <!-- Street -->
+                        <div class="form-group">
+                            <label for="streetAddress">Street</label>
+                            <input type="text" class="form-control" id="streetAddress" placeholder="Enter your street address">
+                        </div>
+
+                        <!-- Town -->
+                        <div class="form-group">
+                            <label for="Town">Town</label>
+                            <input type="text" class="form-control" id="TownAddress" placeholder="Enter your Town">
+                        </div>
+
+                        <!-- Mobile Number -->
+                        <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"-->
+                        <div class="form-group">
+                            <label for="mobileNumber">Mobile Number</label>
+                            <input type="text" class="form-control" id="mobileNumber"  placeholder="Enter your mobile number">
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="form-group">
+                            <label for="emailAddress">Email</label>
+                            <input type="text" class="form-control" id="emailAddress" placeholder="Enter your email address">
+                        </div>
+
+                        <button id="btnSend" type="submit" class="btn btn-primary" value="Submit">Submit</button>
+                    </form>
+                </div>
+                <div class="Col-3">
+                    
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="block">
+        <!-- Empty Space -->
+    </div>
+
+    <footer>
+        <center>
+            <div>
+                <p class="footerFont">Aroma Coffee, Narrow Lane, London England. Po. Box 15822.   
+                <a href="contact.html">Contact us</a></p>
+            </div>
+        </center>
+    </footer>
+    <script lang="JavaScript" src="js/contact.js"></script>
+
+    <!-- Examiner Notice -->
+    <script lang="JavaScript">
+        $(document).ready(function(){
+
+            //let the examiner know what is included on this page
+            alert("This page demonstrates the following HTML, CSS, and JavaScript features:\n" +
+                " HTML5: \n" + " CSS3: \n" + " JavaScript: \n" + " JQuery:\n" + "Custom Object JS:\n" +
+                "HTML5 Forms:\n" + "JavaScript Validation:\n" + "Style text & div CSS3:\n" + 
+                "Save local data:\n" + "Retrive data locally:\n");
+        });
+    </script>
+</body>
+
+</html>

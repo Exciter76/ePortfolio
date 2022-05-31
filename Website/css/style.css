@@ -1,0 +1,91 @@
+/*  style template */
+
+.imgContainer {
+    width : 285px;      /* so as to fit into the container */
+    height : 190px;     /* to give a more uniform size to each image in the container*/
+    margin-bottom: 5px; 
+    
+}
+
+.imgAbout {
+    width : 450px;  /* so as to fit into the container */
+}
+
+.imgTop {
+    margin-top: 50px;
+}
+
+.price {    /* price of coffee on the shop page */
+    position: absolute;
+    right: 0;
+    color: blue;
+}
+
+.canvas {
+    width: 250px;
+    height: 150px;
+}
+
+.card {
+    border: 0;  /* Override the border to switch it off. This is because the card content is not uniform.*/
+}
+
+.footerFont {
+    font-size : small;
+}
+.mainBody {
+   
+}
+
+.moveLeft {
+    padding-left: 250px;
+}
+
+.formWidth {
+    width : 600px;
+}
+
+.comment {
+    font-style: italic;
+}
+
+.block {
+    margin-bottom : 150px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: cornsilk;
+}
+
+#main {
+    
+}
+
+.flip {
+    transition: 1.5s ease;
+}
+
+.flip:hover {
+    transform: scaleX(-1);
+}
+
+.zoom {
+    transition: .5s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+/* Social Media Display */
+#SocialMsgDisplay {
+    height: 50px;
+    margin-top: 80px;
+    font-family: Comic Sans MS;
+    text-align: center;
+    color: saddlebrown;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html> 			
+
+<head>
+	<!-- Index Page -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>coffee</title>
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="Coffee.html">Shop</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Body Area -->
+    <span class="mainBody"></span>
+    <section>
+        <div class="container">
+            <div class="row mx-auto">
+
+                <!-- Americano -->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top zoom" src="image/americano.jpg"
+                             onmouseover="Hide(1)"  onmouseleave="Show(1)" alt="card image americano">
+                        <h5 class="card-title">Americano <span id="price1" class="price"> €0.00</span></h5>
+                        <p>Americano is an expresso that is diluted with water. 
+                            The cream raises to the top giving a longer coffee drink. 
+                            It has been said that American soldiers during WWII made 
+                            this type of coffee to make their beverages last longer. 
+                            It was then (apparently) adopted by American baristas after the war.</p>
+                    </div>
+                </div>
+
+                <!-- Expresso -->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top flip" src="image/expresso.jpeg" alt="card image espresso">
+                        <h5 class="card-title">Expresso <span id="price2" class="price"> €0.00</span></h5>
+                        <p>Espresso is made shoot boiling water under high pressure through finely ground 
+                            coffee beans and then pour into a tiny mug. Sounds simple right? Well, 
+                            it’s surprisingly difficult to master. Espressos are the purest coffee 
+                            experience you can get, and while they’re not for everyone, it can be a 
+                            truly singular drinking experience when you find a good brew.</p>
+                    </div>
+                </div>
+
+                <!-- Latte -->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top zoom" style="height:190px;" src="image/latte.jpg"
+                             onmouseover="Hide(3)"  onmouseleave="Show(3)" alt="card image latte">
+                        <h5 class="card-title">Latte <span id="price3" class="price"> €0.00</span></h5>
+                        <p>A popular option for coffee drinkers, a latte consists steamed (or scalded) 
+                            milk and a single shot of coffee. It is usually quite frothy and can be 
+                            confused with a flat white.</p>
+                    </div>
+                </div>
+
+                <!-- Irish Coffee -->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top flip" style="height:190px;" src="image/irish_coffee.jpg" alt="card image irish coffee">
+                        <h5 class="card-title">Irish Coffee <span id="price4" class="price"> €0.00</span></h5>
+                        <p>This type of coffee is made with Irish whiskey, sugar, and a thick layer of cream 
+                            on the top – and isn’t readily available in New Zealand cafes due to its alcohol 
+                            content. Be warned, trying to make this with scotch and instant coffee doesn’t work ... <i>trust us.</i></p>
+                    </div>
+                </div>
+                
+                <!--Flat White Coffee.jpeg-->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top zoom" style="height:190px;" src="image/Flat White Coffee.jpeg"
+                             onmouseover="Hide(5)"  onmouseleave="Show(5)" alt="card image irish coffee">
+                        <h5 class="card-title">Flat White Coffee <span id="price5" class="price"> €0.00</span></h5>
+                        <p>With steamed milk from the bottom of the jug (which is usually not so frothy, 
+                            but rather creamy) is poured over a shot of espresso. Popular among mums and 
+                            dads at school fetes who are desperately trying to stay awake.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mochaccino.jpg-->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top flip" style="height:190px;" src="image/Mochaccino.jpg" alt="card image irish coffee">
+                        <h5 class="card-title">Mochaccino Coffee <span id="price6" class="price"> €0.00</span></h5>
+                        <p>A latte with added chocolate powder or syrup, sometimes topped with whipped cream. 
+                            This is a good entry level coffee – living in the worlds between the childlike 
+                            hot chocolate and the adult café latte.</p>
+                    </div>
+                </div>
+
+                <!-- Instant Coffee.jpg-->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top zoom" style="height:190px;" src="image/Instant Coffee.jpg"
+                             onmouseover="Hide(7)"  onmouseleave="Show(7)" alt="card image irish coffee">
+                        <h5 class="card-title">Instant Coffee <span id="price7" class="price"> €0.00</span></h5>
+                        <p>Instant coffee is coffee that’s had all the water removed, leaving behind just the 
+                            soluble coffee flavour. Add the water back and, hey presto, 
+                            something that tastes a bit like coffee!</p>
+                    </div>
+                </div>
+
+                <!-- vienna-coffee.jpg-->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top flip" style="height:190px;" src="image/vienna-coffee.jpg" alt="card image irish coffee">
+                        <h5 class="card-title">Vienna Coffee <span id="price8" class="price"> €0.00</span></h5>
+                        <p>Made by mixing two shots of strong espresso, and then adding whipped cream as 
+                            a substitute for milk and sugar. The Vienna melds the strong flavours of a 
+                            straight espresso, with the smoothness of sugary cream.</p>
+                    </div>
+                </div>
+
+                <!-- long-black.-coffeejpg-->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top zoom" style="height:190px;" src="image/long-black-coffee.jpg"
+                             onmouseover="Hide(9)"  onmouseleave="Show(9)" alt="card image irish coffee">
+                        <h5 class="card-title">Long Black Coffee<span id="price9" class="price"> €0.00</span></h5>
+                        <p>Hot water is poured into a cup, and then two shots of espresso are poured into 
+                            the water. If you do the inverse of this, it will result in an Americano. 
+                            Long blacks can be quite strong, and have more crema (a creamy foam that 
+                            tops espresso shots) than an Americano.</p>
+                    </div>
+                </div>
+
+                <!-- Cappuccino-Coffee.jpg -->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top flip" style="height:190px;" src="image/Cappuccino-Coffee.jpg" alt="card image irish coffee">
+                        <h5 class="card-title">Cappuccino Coffee<span id="price10" class="price"> €0.00</span></h5>
+                        <p>Consists of three layers (kind of like a cake). The first is a shot of espresso, then a shot of steamed milk, 
+                            and finally the barista adds a layer of frothed, foamy milk. This final layer 
+                            can also be topped with chocolate shavings or powder. </p>
+                    </div>
+                </div>
+
+                <!-- Filter Coffee -->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top zoom" style="height:190px;" src="image/Filter-Coffee.jpg"
+                             onmouseover="Hide(11)"  onmouseleave="Show(11)" alt="card image irish coffee">
+                        <h5 class="card-title">Filter Coffee<span id="price11" class="price"> €0.00</span></h5>
+                        <p>Ground coffee beans are left to steep in either hot or cold water, then filtered out, leaving 
+                            the liquid behind. The result is less harsh and bitter than espresso, 
+                            but less watery than an Americano, and can be drunk black or with milk.</p>
+                    </div>
+                </div>
+
+                <!-- Dalgona Coffee -->
+                <div class="col-3" style="margin:15px;">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top flip" style="height:190px;" src="image/Dalgona-Coffee.jpg" alt="card image irish coffee">
+                        <h5 class="card-title">Dalgona Coffee
+                        <span id="price12" class="price"> €0.00</span></h5>
+                        <p>Made by whipping up instant coffee, sugar and hot water into a creamy 
+                            froth and adding it to either hot or cold milk. It takes its 
+                            name from the Korean word for honeycomb candy, which it resembles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="block">
+        <!-- Empty Space -->
+    </div>
+
+    <footer>
+        <center>
+            <div>
+                <p class="footerFont">Aroma Coffee, Narrow Lane, London England. Po. Box 15822.   
+                <a href="contact.html">Contact us</a></p>
+            </div>
+        </center>
+    </footer>
+    
+    <!-- Retrieve coffee prices from server -->
+    <script lang="JavaScript" src="js/coffee.js"></script>
+
+    <!-- Examiner Notice -->
+    <script lang="JavaScript">
+        $(document).ready(function(){
+
+            //let the examiner know what is included on this page
+            alert("This page demonstrates the following HTML, CSS, and JavaScript features:\n" +
+                " HTML5: \n" + " CSS3: \n" + " JavaScript: \n" + " JQuery:\n" + "xmlHttpRequest:\n" + "jQuery AJAX " + 
+                "div css3:\n" + "CSS3 Effects:\n" + "API files:\n" + "Interactive Graphics:\n" + "CSS Transitions:\n" +
+                "JavaScript CSS Transitions:\n");
+        });
+    </script>
+</body>
+
+</html>
